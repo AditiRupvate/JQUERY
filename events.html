@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>events</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+
+{
+
+
+  $("#click").click(
+
+    function()
+    {
+      $(this).hide(1000);
+
+    }
+
+    );
+  $("#doubleclick").dblclick(
+
+    function()
+    {
+      $(this).hide();
+
+    }
+
+    );
+  $("#mouseenter").mouseenter(
+
+    function()
+    {
+      $(this).hide();
+
+    }
+
+    );
+  $("#mouseleave").mouseleave(
+
+    function()
+    {
+      $(this).hide();
+
+    }
+
+    );
+ $("*").click(
+
+    function()
+    {
+      $("p").show();
+
+    }
+
+    );
+
+
+});
+</script>
+</head>
+<body>
+
+<p id="click">event click</p>
+<p id="doubleclick">event double click</p>
+<p id="mouseenter">event mouse enter</p>
+<p id="mouseleave">event mouse leave</p>
+
+
+</body>
+</html>

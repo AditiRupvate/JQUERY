@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>get  text html val</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    alert("Text: " + $("#para").text());
+  });
+  $("#btn2").click(function(){
+    alert("HTML: " + $("#para").html());
+  });
+  $("#btn").click(function()
+  {
+    alert("Value: " + $("#input").val());
+  });
+});
+</script>
+</head>
+<body>
+
+<p id="para">Hello <b>Aditi</b> Rupvate.</p>
+
+<button id="btn1">Text</button>
+<button id="btn2">HTML</button>
+<br>
+<p>Name: <input type="text" id="input" value="Enter"></p>
+
+<button id="btn">Value</button>
+
+</body>
+</html>

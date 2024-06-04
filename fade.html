@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>fade</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+
+{
+
+
+  $("#fadein").click(
+
+    function()
+    {
+      $("#fadein").fadeIn();
+
+    }
+
+    );
+  $("#fadeout").click(
+
+    function()
+    {
+      $("#fadeout").fadeOut();
+
+    }
+
+    );
+  $("#fadetoggle").click(
+
+    function()
+    {
+      $("#fadetoggle").fadeToggle();
+
+    }
+
+    );
+  $("#fadeto").click(
+
+    function()
+    {
+      $("#fadeto").fadeTo("slow",0.2);
+
+    }
+
+    );
+
+
+});
+</script>
+</head>
+<body>
+
+<p id="fadein">fade in</p>
+<p id="fadeout">fade out</p>
+<p id="fadetoggle">fade toggle</p>
+<p id="fadeto">fade to</p>
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>slide</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+
+{
+
+
+  $("#btn").click(
+
+    function()
+    {
+      $("#rectangle").slideDown(2000);
+
+    }
+
+    );
+  $("#btn").click(
+
+    function()
+    {
+      $("#rectangle").slideUp();
+
+    }
+
+    );
+  $("#btn2").click(
+
+    function()
+    {
+      $("#rectangle").slideToggle();
+
+    }
+
+    );
+  
+
+
+});
+</script>
+</head>
+<body>
+<button id="btn"> start</button>
+<button id="btn2"> start</button>
+<div id="rectangle" style="width:100px; height: 500px; background-color: red;">
+  
+</div>
+
+
+
+</body>
+</html>

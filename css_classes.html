@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>css classesS</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style type="text/css">
+  .one{
+height:400px; width: 400px;background-color: coral;
+  }
+  .two{
+    height:400px; width: 400px;background-color: cadetblue;
+  }
+</style>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#one").addClass("one");
+  });
+  $("#btn2").click(function(){
+     $("#two").addClass("two");
+  });
+  
+});
+</script>
+</head>
+<body>
+
+<button id="btn1">one</button>
+<button id="btn2">two</button>
+<div id="one">
+  div 1
+</div>
+<br>
+<div id="two">
+  div 2
+</div>
+</body>
+</html>

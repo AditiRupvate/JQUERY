@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>add</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#para").append(" append ");
+  });
+  $("#btn2").click(function(){
+     $("#para").prepend(" prepend ");
+  });
+  $("#btn3").click(function(){
+     $("#img").after(" after ");
+  });
+  $("#btn4").click(function(){
+     $("#img").before(" before ");
+  });
+});
+</script>
+</head>
+<body>
+
+<p id="para">Hello <b>Aditi</b> Rupvate.</p>
+
+<button id="btn1">append</button>
+<button id="btn2">prepend</button>
+
+<br>
+<br>
+
+<img src="images/tree.jpeg" id="img" height="400px" width="400px">
+<br>
+<button id="btn3">after</button>
+<button id="btn4">before</button>
+
+</body>
+</html>

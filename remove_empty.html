@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>remove empty</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#one").remove();
+  });
+  $("#btn2").click(function(){
+     $("#two").empty();
+  });
+  
+});
+</script>
+</head>
+<body>
+
+<button id="btn1">remove</button>
+<button id="btn2">empty</button>
+<div id="one" style="height:400px; width: 400px;background-color: coral;">
+  div 1
+</div>
+<br>
+<div id="two" style="height:400px; width: 400px;background-color: coral;">
+  div 2
+</div>
+</body>
+</html>
